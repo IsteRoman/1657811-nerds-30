@@ -172,3 +172,46 @@ img {
 .possibility-list {
   list-style: none;
 }
+.opportunities {
+
+}
+.opportunities-subtitle {
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.advantages-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.advantages dd {
+  grid-row: 1 / 2;
+  margin: 0;
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.partners {
+  list-style: none;
+  opacity: 20%;
+  transition: var(--default-transition);
+}
+.partners:hover,
+.partners:focus {
+  opacity: 100%;
+}
+.partners:active {
+  opacity: 10%;
+}

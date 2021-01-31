@@ -246,3 +246,16 @@ img {
   font-weight: 700;
   color: var(--basic-black);
 }
+.modal {
+
+}
+.modal-title {
+  font-size: 45px;
+  line-height: auto;
+  font-weight: 700;
+}
+.modal-form {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}

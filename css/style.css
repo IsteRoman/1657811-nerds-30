@@ -165,6 +165,7 @@ img {
   line-height: 1.25;
   font-weight: 700;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 .about {
 
@@ -180,6 +181,7 @@ img {
 }
 .subtitle {
   font-weight: 700;
+  text-transform: uppercase;
 }
 .possibility-list {
   list-style: none;
@@ -190,6 +192,7 @@ img {
 }
 .opportunities-subtitle {
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--basic-black);
 }
 .advantages {

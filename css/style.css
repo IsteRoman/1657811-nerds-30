@@ -36,6 +36,7 @@
   --basic-light-yellow: #efc84a;
   --basic-yllow: #eab534;
   --basic-dark-yellow: #e5a722;
+  --basic-radio-check: #4d4d4d;
   --default-transition: 0.15s ease-in-out;
 }
 .page-body {
@@ -290,10 +291,82 @@ line-height: 1.18;
 .radio {
   list-style: none;
   padding: 0;
+  margin-bottom: 10px;
+}
+.radio input {
+  display: none;
+}
+.radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.radio label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(../img/radio-off.png) 0 0 no-repeat;
+  background-size: 17px 18px;
+  opacity: 40%;
+}
+.rad[type=radio]:checked +label:before {
+  background: url(../img/radio-on.png) 0 0 no-repeat;
+  background-size: 17px 18px;
+}
+.radio label:hover:before,
+.radio label:focus:before {
+  opacity: 100%;
+}
+.rad[type=radio]:disabled +label:before {
+  opacity: 10%;
 }
 .checkbox {
   list-style: none;
   padding: 0;
+  margin-bottom: 10px;
+}
+.checkbox input {
+  display: none;
+}
+.checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(../img/checkbox-off.png) 0 0 no-repeat;
+  background-size: 17px 18px;
+  opacity: 40%;
+}
+.check[type=checkbox]:checked +label:before {
+  background: url(../img/checkbox-on.png) 0 0 no-repeat;
+  background-size: 18px 18px;
+}
+.checkbox label:hover:before,
+.checkbox label:focus:before {
+  opacity: 100%;
+}
+.check[type=checkbox]:disabled +label:before {
+  opacity: 10%;
 }
 .filter {
 

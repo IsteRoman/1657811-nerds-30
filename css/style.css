@@ -91,6 +91,9 @@ img {
 .basket-link:active {
   opacity: 30%;
 }
+.content {
+
+}
 .hidden {
   visibility: hidden;
   position: absolute;

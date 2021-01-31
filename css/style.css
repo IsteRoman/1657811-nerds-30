@@ -154,3 +154,21 @@ img {
   font-weight: 700;
   color: var(--basic-black);
 }
+.about {
+
+}
+.tagline {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+.possibility {
+
+}
+.subtitle {
+  font-weight: 700;
+}
+.possibility-list {
+  list-style: none;
+}

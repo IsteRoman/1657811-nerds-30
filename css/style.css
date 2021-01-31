@@ -215,3 +215,18 @@ img {
 .partners:active {
   opacity: 10%;
 }
+.contacts {
+
+}
+.company {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.address {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark);
+}

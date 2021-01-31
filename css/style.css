@@ -167,6 +167,16 @@ font-weight: 500;
 .yellow:active {
   background-color: var(--basic-dark-yellow);
 }
+.gray {
+  background-color: var(--basic-extra-light-gray);
+}
+.gray:hover,
+.gray:focus {
+  background-color: var(--basic-light-gray);
+}
+.gray:active {
+  background-color: var(--basic-push-gray);
+}
 .products {
   list-style: none;
   padding: 0;
@@ -258,6 +268,29 @@ line-height: 1.18;
   padding: 0;
 }
 .checkbox {
+  list-style: none;
+  padding: 0;
+}
+.filter {
+
+}
+.filter-list {
+  list-style: none;
+  padding: 0;
+}
+.goods {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.125;
+}
+.goods-title {
+  font-size: 18px;
+  line-height: 1.66;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.pagination {
   list-style: none;
   padding: 0;
 }

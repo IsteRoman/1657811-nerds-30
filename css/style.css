@@ -93,3 +93,15 @@ img {
 	height: 1px;
 	width: 1px;
 }
+.slaiders{
+  background-color: var(--basic-extra-light-gray);
+}
+.slaider {
+  font-weight: 500;
+}
+.slaider-title {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+  background-color: transparent;
+}

@@ -62,9 +62,15 @@ img {
 .main-header {
   background-color: var(--basic-extra-light-gray);
 }
+.main-logo {
+  transition: var(--default-transition);
+}
 .main-logo:hover,
 .main-logo:focus {
   color: var(--basic-black);
+}
+.main-logo:active {
+  opacity: 30%;
 }
 .main-navigation{
   font-size: 16px;
@@ -255,17 +261,17 @@ margin: 0;
   font-weight: 700;
   color: var(--basic-black);
 }
-.partners {
+.partners a {
   list-style: none;
   padding: 0;
   opacity: 20%;
   transition: var(--default-transition);
 }
-.partners:hover,
-.partners:focus {
+.partners a:hover,
+.partners a:focus {
   opacity: 100%;
 }
-.partners:active {
+.partners a:active {
   opacity: 10%;
 }
 .form-catalog{

@@ -232,13 +232,55 @@ margin: 0;
 .btn-text:active {
   opacity: 100%;
 }
-btn-arrow {
-  background: url(../img/icon-down-dir.svg);
+.btn-arrow {
+  background: none;
+  background-image: url(../img/arrow/icon-down-dir.png);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  border: none;
   cursor: pointer;
   outline: 0;
-  color: var(--basic-black);
-  opacity: 30%;
+  opacity: 20%;
   transition: var(--default-transition);
+}
+.btn-arrow:hover,
+.btn-arrow:focus {
+  background: none;
+  background-image: url(../img/arrow/icon-down-dir.png);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  opacity: 100%;
+}
+.btn-arrow:active {
+  background-image: url(../img/arrow/icon-down-dir2.png);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  box-shadow: none;
+}
+.btn-arrow-top {
+  background: none;
+  background-image: url(../img/arrow/icon-up-dir.png);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  opacity: 20%;
+  transition: var(--default-transition);
+}
+.btn-arrow-top:hover,
+.btn-arrow-top:focus {
+  background: none;
+  background-image: url(../img/arrow/icon-up-dir.png);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  opacity: 100%;
+}
+.btn-arrow-top:active {
+  background-image: url(../img/arrow/icon-up-dir2.png);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  box-shadow: none;
 }
 .products {
   list-style: none;

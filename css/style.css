@@ -105,3 +105,43 @@ img {
   color: var(--basic-black);
   background-color: transparent;
 }
+.button {
+  display: block;
+  width: 160px;
+  height: 50px;
+  border-radius: 3%;
+  background-color: var(--basic-light-red);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  text-align: center;
+  transition: var(--default-transition);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--basic-red);
+}
+.button:active {
+  background-color: var(--basic-dark-red);
+}
+.green {
+  background-color: var(--basic-light-green);
+}
+.green:hover,
+.green:focus {
+  background-color: var(--basic-green);
+}
+.green:active {
+  background-color: var(--basic-dark-green);
+}
+.yellow {
+  background-color: var(--basic-light-yellow);
+}
+.yellow:hover,
+.yellow:focus {
+  background-color: var(--basic-yllow);
+}
+.yellow:active {
+  background-color: var(--basic-dark-yellow);
+}

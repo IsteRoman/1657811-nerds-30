@@ -53,3 +53,34 @@ img {
   max-width: 100%;
   height:auto;
 }
+.main-header {
+  background-color: var(--basic-extra-light-gray);
+}
+.main-logo:hover,
+.main-logo:focus {
+  color: var(--basic-black);
+}
+.main-navigation{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.navigation-list {
+  list-style: none;
+}
+.navigation-list a,
+.basket-link {
+  color: var(--basic-black);
+}
+.navigation-list a:hover,
+.basket-link:hover,
+.navigation-list a:focus,
+.basket-link:focus {
+  color: var(--basic-light-red);
+}
+.navigation-list a:active,
+.basket-link:active {
+  opacity: 30%;
+}

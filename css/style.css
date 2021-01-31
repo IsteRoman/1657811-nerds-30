@@ -76,6 +76,10 @@ img {
 .navigation-list {
   list-style: none;
   padding: 0;
+  text-transform: uppercase;
+}
+.basket-link {
+  text-transform: uppercase;
 }
 .navigation-list a,
 .basket-link {
@@ -90,6 +94,9 @@ img {
 .navigation-list a:active,
 .basket-link:active {
   opacity: 30%;
+}
+.active {
+
 }
 .content {
 
@@ -138,6 +145,8 @@ font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   transition: var(--default-transition);
+  cursor: pointer;
+  outline: 0;
 }
 .button:hover,
 .button:focus {
@@ -256,6 +265,9 @@ font-weight: 500;
 .form-catalog{
 font-size: 16;
 line-height: 1.18;
+}
+.fieldset {
+  border: none;
 }
 .legend {
   font-size: 18px;

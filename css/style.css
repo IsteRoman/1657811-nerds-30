@@ -168,6 +168,7 @@ margin: 0;
 .button:active {
   background-color: var(--basic-dark-red);
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .green {
   background-color: var(--basic-light-green);
@@ -178,6 +179,7 @@ margin: 0;
 }
 .green:active {
   background-color: var(--basic-dark-green);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .yellow {
   background-color: var(--basic-light-yellow);
@@ -188,6 +190,7 @@ margin: 0;
 }
 .yellow:active {
   background-color: var(--basic-dark-yellow);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .gray {
   background-color: var(--basic-extra-light-gray);
@@ -198,6 +201,7 @@ margin: 0;
 }
 .gray:active {
   background-color: var(--basic-push-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .btn-pagination {
   background-color: var(--basic-extra-light-gray);
@@ -210,6 +214,7 @@ margin: 0;
 }
 .btn-pagination:active {
   background-color: var(--basic-push-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .btn-text {
   background: none;

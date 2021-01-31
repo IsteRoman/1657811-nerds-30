@@ -39,9 +39,11 @@
   --default-transition: 0.15s ease-in-out;
 }
 .page-body {
-  font-family: "robato", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
   color: var(--basic-extra-dark);
   background-color: var(--basic-white);
@@ -66,13 +68,14 @@ img {
 }
 .main-navigation{
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   font-weight: 500;
   color: var(--basic-black);
   background-color: transparent;
 }
 .navigation-list {
   list-style: none;
+  padding: 0;
 }
 .navigation-list a,
 .basket-link {
@@ -92,20 +95,21 @@ img {
   visibility: hidden;
   position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
+  padding: 0;
+  margin: 0;
 	border: 0;
 	height: 1px;
 	width: 1px;
 }
-.slaiders{
+.sliders{
   background-color: var(--basic-extra-light-gray);
 }
-.slaider {
+.slider {
   font-weight: 500;
 }
-.slaider-title {
+.slider-title {
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
   color: var(--basic-black);
   background-color: transparent;
 }
@@ -119,7 +123,7 @@ img {
   min-width: 160px;
   min-height: 50px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
   text-transform: uppercase;
   text-align: center;
   transition: var(--default-transition);
@@ -156,7 +160,7 @@ img {
 }
 .products-title {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   font-weight: 700;
   color: var(--basic-black);
 }
@@ -165,7 +169,7 @@ img {
 }
 .tagline {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   font-weight: 500;
   color: var(--basic-black);
 }
@@ -194,18 +198,18 @@ img {
 }
 .advantages-text {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
 }
 .percent {
   font-size: 26px;
-  line-height: 40px;
+  line-height: 1.54;
   font-weight: 700;
 }
 .advantages dd {
   grid-row: 1 / 2;
   margin: 0;
   font-size: 45px;
-  line-height: 64px;
+  line-height: 1.42;
   font-weight: 700;
   color: var(--basic-black);
 }
@@ -226,19 +230,19 @@ img {
 }
 .company {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.6;
   font-weight: 700;
 }
 .address {
   font-size: 16px;
   font-style: normal;
-  line-height: 18px;
+  line-height: 1.125;
   font-weight: 400;
   color: var(--basic-dark);
 }
 .main-footer {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.375;
   font-weight: 400;
   color: var(--basic-gray);
   background-color: var(--basic-white);
@@ -248,7 +252,7 @@ img {
 }
 .pseudo-subtitle {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 700;
   color: var(--basic-black);
 }
@@ -262,6 +266,6 @@ img {
 }
 .modal-form {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
   font-weight: 700;
 }

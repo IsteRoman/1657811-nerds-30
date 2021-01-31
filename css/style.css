@@ -199,6 +199,42 @@ margin: 0;
 .gray:active {
   background-color: var(--basic-push-gray);
 }
+.btn-pagination {
+  background-color: var(--basic-extra-light-gray);
+  min-width: 0;
+  min-height: 0;
+}
+.btn-pagination:hover,
+.btn-pagination:focus {
+  background-color: var(--basic-light-gray);
+}
+.btn-pagination:active {
+  background-color: var(--basic-push-gray);
+}
+.btn-text {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  color: var(--basic-black);
+  opacity: 30%;
+  transition: var(--default-transition);
+}
+.btn-text:hover,
+.btn-text:focus {
+  opacity: 60%;
+}
+.btn-text:active {
+  opacity: 100%;
+}
+btn-arrow {
+  background: url(../img/icon-down-dir.svg);
+  cursor: pointer;
+  outline: 0;
+  color: var(--basic-black);
+  opacity: 30%;
+  transition: var(--default-transition);
+}
 .products {
   list-style: none;
   padding: 0;

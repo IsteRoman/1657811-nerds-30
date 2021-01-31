@@ -94,6 +94,14 @@ img {
 .content {
 
 }
+.page-main-top {
+  background-color: var(--basic-extra-light-gray);
+}
+.page-main-top-title {
+font-size: 55px;
+line-height: 1;
+font-weight: 500;
+}
 .hidden {
   visibility: hidden;
   position: absolute;
@@ -234,6 +242,24 @@ img {
 }
 .partners:active {
   opacity: 10%;
+}
+.form-catalog{
+font-size: 16;
+line-height: 1.18;
+}
+.legend {
+  font-size: 18px;
+  line-height: 1.66;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.radio {
+  list-style: none;
+  padding: 0;
+}
+.checkbox {
+  list-style: none;
+  padding: 0;
 }
 .contacts {
 

@@ -230,3 +230,19 @@ img {
   font-weight: 400;
   color: var(--basic-dark);
 }
+.main-footer {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--basic-gray);
+  background-color: var(--basic-white);
+}
+.social {
+  list-style: none;
+}
+.pseudo-subtitle {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-black);
+}

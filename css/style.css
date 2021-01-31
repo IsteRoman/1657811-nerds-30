@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto.woff2) format("woff2"), url("../fonts/roboto.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/robotobold.woff2) format("woff2"), url("../fonts/robotobold.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/robotomedium.woff2) format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+}
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-dark: #666666;
+  --basic-extra-gray: #a6a6a6;
+  --basic-gray: #444444;
+  --basic-light-gray: #dfdfdf;
+  --basic-push-gray: #d5d5d5;
+  --basic-extra-light-gray: #eeeeee;
+  --basic-extra-light-2-gray: #e1e1e1;
+  --basic-white: #ffffff;
+  --basic-light-red: #fb565a;
+  --basic-red: #e74246;
+  --basic-dark-red: #d7373b;
+  --basic-light-green: #00ca74;
+  --basic-green: #00bc6c;
+  --basic-dark-green: #00aa62;
+  --basic-light-yellow: #efc84a;
+  --basic-yllow: #eab534;
+  --basic-dark-yellow: #e5a722;
+}
+.page-body {
+  font-family: "robato", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+  background-color: var(--basic-white);
+}
+a {
+  text-decoration: none;
+  img {
+    max-width: 100%;
+  }
+}
+

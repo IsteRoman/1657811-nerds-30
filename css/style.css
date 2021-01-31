@@ -516,3 +516,31 @@ line-height: 1.18;
   line-height: 1.125;
   font-weight: 700;
 }
+.close{
+background: var(--basic-light-red);
+opacity: 30%;
+border: none;
+height: 100px;
+width: 20px;
+position: relative;
+left: 40px;
+cursor: pointer;
+outline: 0;
+transform: rotate(45deg);
+}
+.close:after {
+  content: "";
+  height: 20px;
+  width: 100px;
+  background: var(--basic-light-red);;
+  position: absolute;
+  left: -40px;
+  top: 40px;
+  }
+.close:hover,
+.close:focus {
+  opacity: 100%;
+}
+.close:active {
+  opacity: 10%;
+}

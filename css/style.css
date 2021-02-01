@@ -118,6 +118,7 @@ font-size: 55px;
 line-height: 1;
 font-weight: 500;
 margin: 0;
+color: var(--basic-black);
 }
 .hidden {
   visibility: hidden;
@@ -367,6 +368,7 @@ line-height: 1.18;
   line-height: 1.66;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 .radio {
   list-style: none;
@@ -460,12 +462,14 @@ line-height: 1.18;
   padding: 0;
   font-size: 16px;
   line-height: 1.125;
+  color: var(--basic-dark)
 }
 .goods-title {
   font-size: 18px;
   line-height: 1.66;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 .pagination {
   list-style: none;
@@ -504,6 +508,7 @@ line-height: 1.18;
   color: var(--basic-black);
 }
 .modal {
+  color: var(--basic-black);
 
 }
 .modal-title {

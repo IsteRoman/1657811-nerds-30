@@ -305,7 +305,7 @@ color: var(--basic-black);
   backgrocolor: var(--basic-white);
   transition: var(--default-transition);
 }
-.social-img:active {
+.social-button:active .social-img{
 opacity: 30%;
 }
 .products {

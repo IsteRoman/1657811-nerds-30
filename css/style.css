@@ -362,6 +362,9 @@ line-height: 1.18;
 }
 .fieldset {
   border: none;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--basic-extra-dark);
 }
 .legend {
   font-size: 18px;
@@ -398,10 +401,12 @@ line-height: 1.18;
   background: url(../img/radio-off.png) 0 0 no-repeat;
   background-size: 17px 18px;
   opacity: 40%;
+  transition: var(--default-transition);
 }
 .rad[type=radio]:checked +label:before {
   background: url(../img/radio-on.png) 0 0 no-repeat;
   background-size: 17px 18px;
+  transition: var(--default-transition);
 }
 .radio label:hover:before,
 .radio label:focus:before {
@@ -438,10 +443,12 @@ line-height: 1.18;
   background: url(../img/checkbox-off.png) 0 0 no-repeat;
   background-size: 17px 18px;
   opacity: 40%;
+  transition: var(--default-transition);
 }
 .check[type=checkbox]:checked +label:before {
   background: url(../img/checkbox-on.png) 0 0 no-repeat;
   background-size: 18px 18px;
+  transition: var(--default-transition);
 }
 .checkbox label:hover:before,
 .checkbox label:focus:before {

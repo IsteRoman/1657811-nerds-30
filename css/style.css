@@ -280,6 +280,34 @@ color: var(--basic-black);
   box-shadow: none;
   border-right: 43px solid var(--basic-triangle-dark);
 }
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  transition: var(--default-transition);
+  background: var(--basic-extra-light-2-gray);
+  height: 81px;
+  width: 81px;
+  border-radius: 50%;
+}
+.social-button:hover,
+.social-button:focus {
+  background: var(--basic-red);
+}
+.social-button:active {
+  background: var(--basic-dark-red);
+}
+.social-img {
+  display: inline;
+  backgrocolor: var(--basic-white);
+  transition: var(--default-transition);
+}
+.social-img:active {
+opacity: 30%;
+}
 .products {
   list-style: none;
   padding: 0;

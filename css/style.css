@@ -78,6 +78,7 @@ img {
 .wraper {
   width: 1157px;
   margin: 0 auto;
+  padding: 0;
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .main-navigation {
@@ -89,12 +90,12 @@ img {
   display: grid;
   grid-template-columns: 160px 1fr min-content;
   gap: 202px;
+  align-items: ;
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .main-logo {
+  height: min-content;
   transition: var(--default-transition);
-  padding: 0;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .main-logo:hover,
 .main-logo:focus {
@@ -113,11 +114,23 @@ img {
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .basket-link {
+  position: relative;
   text-transform: uppercase;
-  padding-bottom: 9px;
-  display: block;
+  height: min-content;
 
   outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+.basket-link::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/cart-icon.svg") 0 0 no-repeat;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  ;
+
 }
 .navigation-list a,
 .basket-link {
@@ -346,6 +359,16 @@ opacity: 30%;
 }
 .product {
   width: 300px;
+  position: relative;
+}
+.web::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 146px;
+  background: url("../img/illustration-1\ 1.jpg") 0 0 no-repeat;
+  top: -100px;
 }
 .products-title {
   font-size: 24px;
@@ -376,6 +399,16 @@ opacity: 30%;
 .possibility-list {
   list-style: none;
   padding: 0;
+  padding-left: 32px;
+  position: relative;
+}
+.possibility-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  border-bottom: 2px solid var(--basic-light-red);
+  left: 0;
 }
 .opportunities {
 
@@ -558,6 +591,15 @@ line-height: 1.18;
   padding: 0;
 }
 .contacts {
+  width: 319px;
+  min-height: 308px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+
 
 }
 .company {
@@ -604,7 +646,14 @@ line-height: 1.18;
   padding: 0;
 }
 .modal {
+  width: 960px;
+  min-height: 590px;
+  padding-left: 100px;
+  padding-right: 100px;
   color: var(--basic-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
 }
 .modal-title {
@@ -613,9 +662,13 @@ line-height: 1.18;
   font-weight: 700;
 }
 .modal-form {
+  width: 761px;
   font-size: 16px;
   line-height: 1.125;
   font-weight: 700;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .close{
 background: var(--basic-light-red);

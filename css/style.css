@@ -675,15 +675,15 @@ line-height: 1.18;
   color: var(--basic-dark);
 }
 .main-footer {
-  display: grid;
-  grid-template-columns: 270px 1fr;
-  gap: 140px;
-  height: 217px;
   font-size: 16px;
   line-height: 1.375;
   font-weight: 400;
   color: var(--basic-gray);
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 140px;
+  align-items: center;
 }
 .social {
   display: flex;
@@ -693,9 +693,8 @@ line-height: 1.18;
   padding: 0;
 }
 .pseudo-slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+ margin-top: 75px;
+ margin-bottom: 74px;
 }
 .pseudo-subtitle {
   font-size: 36px;
@@ -704,6 +703,10 @@ line-height: 1.18;
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+}
+.pseudo-text {
+  padding: 0;
+  margin-top: 10px;
 }
 .modal {
   width: 960px;

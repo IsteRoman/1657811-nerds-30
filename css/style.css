@@ -107,6 +107,7 @@ img {
 }
 .navigation-list {
   list-style: none;
+  width: 437px;
   padding-left: 0;
   margin: 0;
   text-transform: uppercase;
@@ -115,7 +116,7 @@ img {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-.pusher:not(:last-of-type) {
+.pusher:not(:nth-of-type(n+4)) {
   margin-right: 15px;
 }
 .basket-link {
@@ -520,21 +521,26 @@ opacity: 30%;
   font-weight: 700;
   color: var(--basic-black);
 }
+.partners-container {
+  border-top: 2px solid var(--basic-extra-light-gray);
+  border-bottom: 2px solid var(--basic-extra-light-gray);
+  margin-bottom: 80px;
+}
 .partners {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
-  padding-top: 46px;
-  padding-bottom: 44px;
-  padding-left: 0;
-  border-top: 2px solid var(--basic-extra-light-gray);
-  border-bottom: 2px solid var(--basic-extra-light-gray);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
+  margin-top: 46px;
+  margin-bottom: 44px;
+  padding: 0;
 }
 .partners a {
   opacity: 20%;
   transition: var(--default-transition);
+
 }
 .partners a:hover,
 .partners a:focus {
@@ -543,9 +549,20 @@ opacity: 30%;
 .partners a:active {
   opacity: 10%;
 }
+.partner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 52px;
+  border-left: 2px solid var(--basic-extra-light-gray);
+  top: 11px;
+  transform: translateX(-45px);
+}
 .form-catalog{
 font-size: 16;
 line-height: 1.18;
+outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .fieldset {
   border: none;
@@ -679,33 +696,41 @@ line-height: 1.18;
   width: 231px;
   height: 190px;
   background: url("../img/map-marker\ 1.png") 0 0 no-repeat;
-  top: 100px;
-  left: 871px;
+  transform: translate(872px, 98px);
+
 }
 .contacts {
   position: absolute;
   width: 319px;
   min-height: 308px;
+  transform: translate(148px, -380px);
+  background-color: var(--basic-white);
+}
+.contacts-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  top: 54px;
-  left: 140px;
-  background-color: var(--basic-white);
+  flex-wrap: wrap;
+  margin: 49px 50px 47px 50px;
 }
 .company {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 22.71px;
 }
 .address {
   font-size: 16px;
   font-style: normal;
   line-height: 1.125;
   font-weight: 400;
-  width: 230px;
   color: var(--basic-dark);
+  margin-bottom: 18px;
+}
+.telephone {
+  color: var(--basic-dark);
+  margin: 0;
+  margin-bottom: 37.29px;
 }
 .main-footer {
   font-size: 16px;
@@ -717,17 +742,22 @@ line-height: 1.18;
   grid-template-columns: 270px 1fr;
   gap: 140px;
   align-items: center;
+  padding-top: 68px;
+  padding-bottom: 68px;
 }
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 0;
 }
 .pseudo-slogan {
- margin-top: 75px;
- margin-bottom: 74px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .pseudo-subtitle {
   font-size: 36px;
@@ -739,6 +769,7 @@ line-height: 1.18;
 }
 .pseudo-text {
   padding: 0;
+  margin:0;
   margin-top: 10px;
 }
 .modal {

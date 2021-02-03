@@ -47,7 +47,6 @@
   margin: 0;
   padding: 0;
   min-height: 100%;
-  width: 1440px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -71,8 +70,7 @@ img {
 }
 .main-header {
   background-color: var(--basic-extra-light-gray);
-  width: 1440px;
-  height: 114px;
+
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .wraper {
@@ -90,7 +88,7 @@ img {
   display: grid;
   grid-template-columns: 160px 1fr min-content;
   gap: 202px;
-  align-items: ;
+  align-items: end;
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .main-logo {
@@ -104,33 +102,41 @@ img {
 .main-logo:active {
   opacity: 30%;
 }
+.fool-wraper-header{
+  padding-top: 49px;
+}
+.navigation-list,
+.basket-link {
+  padding-bottom: 9px;
+}
 .navigation-list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  margin: 0;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
+.pusher li:not(:last-of-type) {
+  margin-right: 10px;
+}
 .basket-link {
-  position: relative;
   text-transform: uppercase;
-  height: min-content;
-
   outline: 5px solid rgba(255, 0, 0, 0.7);
+  position: relative;
+  margin: 0;
 }
 .basket-link::before {
   content: "";
+  position: absolute;
   display: inline-block;
   width: 15px;
   height: 15px;
   background: url("../img/cart-icon.svg") 0 0 no-repeat;
-  position: absolute;
   left: -25px;
-  top: 50%;
-  ;
-
+  top: 9px;
 }
 .navigation-list a,
 .basket-link {
@@ -172,14 +178,26 @@ color: var(--basic-black);
 	height: 1px;
 	width: 1px;
 }
-.none {
-  margin: 0;
-}
 .sliders{
   background-color: var(--basic-extra-light-gray);
 }
 .slider {
   font-weight: 500;
+  padding-top: 78px;
+  padding-bottom: 80px;
+}
+.first-slide {
+  background: url("../img/nerds-index-slide1\ 1.png") center right no-repeat;
+}
+.second-slide {
+  background: url("../img/nerds-index-slide2\ 1.png") center right no-repeat;
+}
+.third-slide {
+  background: url("../img/nerds-index-slide3\ 1.png") center right no-repeat;
+}
+.slider-title {
+  width: 538px;
+  margin-bottom: 37px;
 }
 .slider-strong {
   font-size: 55px;
@@ -187,6 +205,10 @@ color: var(--basic-black);
   font-weight: 500;
   color: var(--basic-black);
   background-color: transparent;
+}
+.slider-text {
+  width: 416px;
+  margin-bottom: 27px;
 }
 .button {
   display: inline-flex;
@@ -359,16 +381,32 @@ opacity: 30%;
 }
 .product {
   width: 300px;
+  margin: 80px 0;
   position: relative;
 }
 .web::before {
   content: "";
   display: block;
-  position: absolute;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-1\ 1.jpg") 0 0 no-repeat;
-  top: -100px;
+  background-color: var(--basic-light-red);
+}
+.app::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
+  background: url("../img/illustration-2\ 1.jpg") 0 0 no-repeat;
+  background-color: var(--basic-light-green);
+}
+.presentation::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
+  background: url("../img/illustration-3\ 1.jpg") 0 0 no-repeat;
+  background-color: var(--basic-light-yellow);
 }
 .products-title {
   font-size: 24px;
@@ -381,16 +419,15 @@ opacity: 30%;
   display: grid;
   grid-template-columns: 1fr 360px ;
   gap: 40px;
-
+}
+.about {
+  margin: 73px 0;
 }
 .tagline-strong {
   font-size: 45px;
   line-height: 1;
   font-weight: 500;
   color: var(--basic-black);
-}
-.possibility {
-
 }
 .subtitle {
   font-weight: 700;
@@ -411,12 +448,21 @@ opacity: 30%;
   left: 0;
 }
 .opportunities {
-
+  margin-top: 39px;
+  margin-bottom: 74px;
 }
 .opportunities-subtitle {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+.opportunities-subtitle::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 208px;
+  background: url(../img/nerds-illustration\ 1.png) 0 0 no-repeat;
+  background-color: var(--basic-light-gray);
 }
 .advantages {
   display: grid;
@@ -590,17 +636,30 @@ line-height: 1.18;
   list-style: none;
   padding: 0;
 }
+.map-container {
+  position: relative;
+}
+.map-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 231px;
+  height: 190px;
+  background: url("../img/map-marker\ 1.png") 0 0 no-repeat;
+  top: 100px;
+  left: 871px;
+}
 .contacts {
+  position: absolute;
   width: 319px;
   min-height: 308px;
-  padding: 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-
-
+  top: 54px;
+  left: 140px;
+  background-color: var(--basic-white);
 }
 .company {
   font-size: 18px;
@@ -612,6 +671,7 @@ line-height: 1.18;
   font-style: normal;
   line-height: 1.125;
   font-weight: 400;
+  width: 230px;
   color: var(--basic-dark);
 }
 .main-footer {

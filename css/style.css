@@ -92,11 +92,12 @@ img {
 }
 .main-logo {
   height: min-content;
+  color: var(--basic-black);
   transition: var(--default-transition);
 }
 .main-logo:hover,
 .main-logo:focus {
-  color: var(--basic-black);
+  opacity: 70%;
 }
 .main-logo:active {
   opacity: 30%;

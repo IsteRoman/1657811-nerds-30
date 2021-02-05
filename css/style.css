@@ -765,6 +765,7 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .good::before {
   content: "";
@@ -774,9 +775,13 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   background: url("../img/browser.svg") top center no-repeat ;
   opacity: 12%;
 }
-.good::before:hover,
-.good::before:focus{
+.good:hover::before,
+.good:focus::before{
   opacity: 100%;
+}
+.good:hover .goods-information{
+  opacity: 1;
+  transform: translate( 0, -100%);
 }
 .goods-information {
   display: flex;
@@ -787,7 +792,10 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   margin: 0;
   padding: 26px 52px 44px 52px;
   position: absolute;
-  top: 390px;
+  transform: translate(-100%, -100%);
+  transition: var(--default-transition);
+  opacity: 0;
+
 }
 .goods-title {
   font-size: 18px;

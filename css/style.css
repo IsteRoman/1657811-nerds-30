@@ -150,6 +150,18 @@ img {
   opacity: 30%;
 }
 .active {
+  position: relative;
+  width: min-content;
+  padding: 0;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid var(--basic-light-red);
 }
 .hidden {
   visibility: hidden;
@@ -529,7 +541,7 @@ margin: 0;
 padding-top: 78px;
 padding-bottom: 108px;
 color: var(--basic-black);
-outline: 5px solid rgba(255, 0, 0, 0.7);
+
 }
 .main-container {
   display: grid;

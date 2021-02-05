@@ -71,7 +71,7 @@ img {
 .wrapper {
   width: 1157px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 141px 0 140px;
 }
 .header-pusher {
   padding-top: 49px;
@@ -590,7 +590,6 @@ background-color: var(--basic-extra-light-gray);
 font-size: 16;
 line-height: 1.18;
 margin-top: 55px;
-outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .fieldset {
   border: none;
@@ -599,7 +598,7 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   color: var(--basic-extra-dark);
   padding: 0;
   margin: 0;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
+  margin-bottom: 50px;
 }
 .legend {
   font-size: 18px;
@@ -609,17 +608,14 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 16px;
-  outline: 5px solid rgba(255, 255, 0, 0.7);
 }
 .fieldset:first-of-type .legend {
   margin-bottom :48px;
 }
-
 .radio {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;
-  outline: 5px solid rgba(255, 255, 150, 0.7);
+  margin: 0;
 }
 .radio input {
   display: none;
@@ -627,6 +623,7 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
 .radio label {
   display: inline-block;
   cursor: pointer;
+  outline: 0;
   position: relative;
   padding-left: 39px;
   margin-bottom: 18px;
@@ -674,8 +671,7 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
 .checkbox {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
+  margin: 0;
 }
 .checkbox input {
   display: none;
@@ -683,38 +679,36 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
 .checkbox label {
   display: inline-block;
   cursor: pointer;
+  outline: 0;
   position: relative;
-  padding-left: 25px;
-  margin-right: 0;
-  line-height: 18px;
-  user-select: none;
+  padding-left: 39px;
+  margin-bottom: 20px;
 }
 .checkbox label::before {
   content: "";
   display: inline-block;
-  width: 17px;
-  height: 18px;
+  width: 23px;
+  height: 23px;
   position: absolute;
-  left: 0;
-  bottom: 1px;
-  background: url(../img/checkbox-off.png) 0 0 no-repeat;
-  background-size: 17px 18px;
+  background: url(../img/checkbox-off.svg) 0 0 no-repeat;
+  background-size: 23px 23px;
   opacity: 40%;
   transition: var(--default-transition);
+  transform: translate(-39px, -2px);
 }
-.check[type=checkbox]:checked +label:before {
-  background: url(../img/checkbox-on.png) 0 0 no-repeat;
-  background-size: 18px 18px;
-  transition: var(--default-transition);
+.check[type=checkbox]:checked +label::before {
+  width: 23px;
+  height: 23px;
+  background: url(../img/checkbox-on.svg) 0 0 no-repeat;
+  background-size: 25px 23px;
 }
-.checkbox label:hover:before,
-.checkbox label:focus:before {
+.checkbox label:hover::before,
+.checkbox label:focus::before {
   opacity: 100%;
 }
-.check[type=checkbox]:disabled +label:before {
+.check[type=checkbox]:disabled +label::before {
   opacity: 10%;
 }
-
 .main-content {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -945,7 +939,7 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .modal-title {
   font-size: 45px;

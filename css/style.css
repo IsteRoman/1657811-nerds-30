@@ -669,7 +669,7 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 .filter {
   display: grid;
-  grid-template-columns: 134px 1fr;
+  grid-template-columns: max-content 1fr;
   gap: 266px;
   margin: 0;
   margin-bottom: 48px;

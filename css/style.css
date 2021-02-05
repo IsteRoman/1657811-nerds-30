@@ -725,6 +725,10 @@ outline: 5px solid rgba(255, 0, 0, 0.7);
   color: var(--basic-dark);
   outline: 5px solid rgba(100, 100, 50, 0.7);
 }
+.catalog-img {
+  width: 358px;
+  height: 578px;
+}
 .good {
   display: block;
   position: relative;

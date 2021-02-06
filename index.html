@@ -159,11 +159,13 @@
     <div class="modal">
       <h3 class="modal-title">Напишите нам</h3>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label>Ваше имя: <input type="text" name="user_name" placeholder="Имя Фамилия"></label>
-        <label>Ваш email: <input type="email" name="user_email" placeholder="email@example.com"></label>
-        <label>Текст письма:</label>
-        <textarea rows="4">В свободной форме</textarea>
-        <button class="button" type="submit">Отправить</button>
+        <label class="modal-label" for="user-name">Ваше имя: <input class="modal-input" id="user-name" type="text" name="user_name" placeholder="Имя Фамилия"></label>
+        <label class="modal-label" for="user-email">Ваш email: <input class="modal-input" id="user-email" type="email" name="user_email" placeholder="email@example.com"></label>
+        <div class="modal-textarea-container">
+          <label class="modal-label" for="user-review">Текст письма:</label>
+          <textarea class="modal-textarea" id="user-review" rows="6" name="review" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button modal-button" type="submit">Отправить</button>
         <button class="close" type="button">Закрыть</button>
       </form>
     </div>

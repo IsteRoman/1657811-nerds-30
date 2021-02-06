@@ -113,7 +113,7 @@ img {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-.pusher:not(:nth-of-type(n+4)) {
+.pusher:not(:last-of-type) {
   margin-right: 15px;
 }
 .basket-link {
@@ -781,8 +781,21 @@ margin-top: 55px;
   display: block;
   width: 358px;
   height: 40px;
-  background: url("../img/browser.svg") top center no-repeat ;
+  background-color: var(--basic-radio-check);
+  border-radius: 5px 5px 0 0;
   opacity: 12%;
+}
+.good::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  transform: translate(16px, -608px);
+  box-shadow: 23px 0 0 var(--basic-white),
+  46px 0 0 var(--basic-white);
 }
 .good:hover::before,
 .good:focus::before{
@@ -804,7 +817,6 @@ margin-top: 55px;
   transform: translate(-100%, -100%);
   transition: var(--default-transition);
   opacity: 0;
-
 }
 .goods-title {
   font-size: 18px;

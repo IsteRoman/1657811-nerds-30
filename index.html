@@ -36,22 +36,27 @@
     <main>
       <h1 class="hidden">NЁRDS DESIGN STUDIO</h1>
       <section class="sliders">
-        <div class="wrapper">
+        <div class="wrapper first-wrapper">
           <h2 class=hidden>Наши преимущества</h2>
           <div class="slider first-slide">
-            <p class="slider-title"><strong>Долго, дорого, скрупулезно.</strong></p>
-            <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <p class="slider-title"><strong class="strong">Долго, дорого, скрупулезно.</strong></p>
+            <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </div>
-          <div class="slider second-slide">
-            <p class="slider-title"><strong>Любим математику как&nbsp;никто другой</strong></p>
+          <div class="slider second-slide element-hidden ">
+            <p class="slider-title"><strong class="strong">Любим математику как&nbsp;никто другой</strong></p>
             <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </div>
-          <div class="slider third-slide">
-            <p class="slider-title"><strong>Только ночь, только&nbsp;хардкор</strong></p>
+          <div class="slider third-slide element-hidden ">
+            <p class="slider-title"><strong class="strong">Только ночь, только&nbsp;хардкор</strong></p>
             <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="button button-slider" href="#">Узнать больше</a>
+          </div>
+          <div class="slider-buttons">
+            <button class="slide-btn first slide-btn-active" type="button"></button>
+            <button class="slide-btn second" type="button"></button>
+            <button class="slide-btn third" type="button"></button>
           </div>
         </div>
       </section>
@@ -79,7 +84,7 @@
         <h2 class="hidden">О нас</h2>
         <div class="main-information">
           <div class="about">
-            <p class="tagline"><strong>Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
+            <p class="tagline"><strong class="strong">Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше&nbsp;креатива. Работаем не покладая рук, как роботы.</p>
             <p class="subtitle">Выполняем заказы на разработку:</p>
             <ul class="possibility-list">
@@ -156,18 +161,21 @@
         <p class="pseudo-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <div class="modal">
-      <h3 class="modal-title">Напишите нам</h3>
+    <div class="modal element-hidden">
+      <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="modal-label" for="user-name">Ваше имя: <input class="modal-input" id="user-name" type="text" name="user_name" placeholder="Имя Фамилия"></label>
-        <label class="modal-label" for="user-email">Ваш email: <input class="modal-input" id="user-email" type="email" name="user_email" placeholder="email@example.com"></label>
-        <div class="modal-textarea-container">
+        <div class="modal-user-main-inform">
+          <label class="modal-label" for="user-name">Ваше имя: <input class="modal-input" id="user-name" type="text" name="user_name" placeholder="Имя Фамилия"></label>
+          <label class="modal-label" for="user-email">Ваш email: <input class="modal-input" id="user-email" type="email" name="user_email" placeholder="email@example.com"></label>
+        </div>
+        <div class="modal-user-review">
           <label class="modal-label" for="user-review">Текст письма:</label>
           <textarea class="modal-textarea" id="user-review" rows="6" name="review" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button modal-button" type="submit">Отправить</button>
-        <button class="close" type="button">Закрыть</button>
       </form>
+      <button class="close" type="button">Закрыть</button>
     </div>
+    <script src="js/Scr.js"></script>
   </body>
 </html>

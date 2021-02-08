@@ -80,10 +80,10 @@ img {
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 1200px;
+
+width: 1157px;
   margin: 0 auto;
-  padding: 0 20px 0 20px;
+  padding: 0 141px 0 140px;
 }
 
 .header-pusher {
@@ -186,7 +186,7 @@ img {
   display: block;
   width: 100%;
   height: 2px;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
   border-bottom: 2px solid var(--basic-light-red);
 }
 
@@ -354,6 +354,9 @@ img {
 }
 
 .gray {
+  width: 260px;
+  margin: 0;
+  padding: 0;
   background-color: var(--basic-extra-light-gray);
 }
 
@@ -748,7 +751,15 @@ margin-top: 55px;
   color: var(--basic-extra-dark);
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
+}
+
+.fieldset:nth-of-type(2n) {
+  margin-bottom: 25px;
+}
+
+.fieldset:nth-of-type(3n) {
+  margin-bottom: 34px;
 }
 
 .legend {
@@ -803,12 +814,8 @@ margin-top: 55px;
   border-radius: 50%;
 }
 
-.min-toggle {
-  left: 33px;
-}
-
 .max-toggle {
-  left: 165px;
+  left: 160px;
 }
 
 .min-price,
@@ -848,19 +855,20 @@ margin-top: 55px;
   cursor: pointer;
   outline: 0;
   position: relative;
-  padding-left: 39px;
-  margin-bottom: 18px;
+  padding-left: 35px;
+  margin-bottom: 22px;
 }
 
 .radio .rad-title::before {
   content: "";
   display: inline-block;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   border: 4px solid var(--basic-radio-check);
   border-radius: 50%;
+  box-sizing: border-box;
   position: absolute;
-  transform: translate(-39px, -17%);
+  transform: translate(-35px, -14%);
   opacity: 40%;
   transition: var(--default-transition);
 }
@@ -873,7 +881,7 @@ margin-top: 55px;
   background-color: var(--basic-radio-check);
   border-radius: 50%;
   position: absolute;
-  transform: translate(-29px, -153%);
+  transform: translate(-27px, -153%);
   opacity: 40%;
   transition: var(--default-transition);
 }
@@ -913,44 +921,50 @@ margin-top: 55px;
   cursor: pointer;
   outline: 0;
   position: relative;
-  padding-left: 39px;
-  margin-bottom: 20px;
+  padding-left: 36px;
+  margin-bottom: 21px;
 }
 
 .checkbox .check-title::before {
   content: "";
   display: inline-block;
-  width: 18.9px;
-  height: 18.3px;
+  width: 23px;
+  height: 23px;
   position: absolute;
   border: 2px solid var(--basic-radio-check);
   border-radius: 3px;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-39px, -1.1px);
+  transform: translate(-36px, -2px);
+  box-sizing: border-box;
 }
 
 .checkbox .check-title::after {
   content: "";
   display: block;
   width: 25px;
-  height: 23px;
+  height: 24px;
   position: absolute;
   background: url(../img/checkbox-on.svg) 0 0 no-repeat;
-  background-size: 25px 23px;
+  background-size: 25px 24px;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-39px, -20px);
+  transform: translate(-36px, -21px);
+  box-sizing: border-box;
 }
+
 .check:checked +.check-title::before {
   content: none;
 }
+
 .check:checked +.check-title::after {
   content: "";
 }
+
 .check +.check-title::before {
   content: "";
 }
+
 .check +.check-title::after {
   content: none;
 }
@@ -1137,8 +1151,8 @@ margin-top: 55px;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  margin-top: 24px;
-  margin-bottom: 60px;
+  margin-top: 23px;
+  margin-bottom: 57px;
   padding: 0;
 }
 
@@ -1444,84 +1458,4 @@ margin-top: 55px;
 .close:active:before,
 .close:active::after {
   opacity: 10%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.range-filter {
-  min-width: 260px;
-}
-
-.range-controls {
-  position: relative;
-  height: 80px;
-  margin-bottom: 14px;
-  padding: 0 22px 0 33px;
-  background-color: var(--basic-extra-light-gray);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.scale {
-  margin-top: 39px;
-  height: 2px;
-  background-color: var(--basic-input-gray);
-}
-
-.bar {
-  height: 2px;
-  width: 138px;
-  background-color: var(--basic-light-green);
-}
-
-.toggle {
-  position: absolute;
-  top: 30px;
-  left: 18px;
-  width: 4px;
-  height: 4px;
-  border: 8px solid var(--basic-white);
-  background-color: var(--basic-toggle);
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.min-toggle {
-  left: 33px;
-}
-
-.max-toggle {
-  left: 165px;
-}
-
-.min-price,
-.max-price {
-  width: 80px;
-  padding: 8px 0;
-  margin-left: 11px;
-  border: none;
-  background-color: var(--basic-extra-light-gray);
-  font-size: 16px;
-  line-height: 1.375;
-  font-weight: 400;
-  text-align: center;
-  color: var(--basic-extra-dark);
-  border-radius: 5px;
-  color: var(--basic-extra-dark);
-  outline: 0;
-}
-
-  .min-price {
-    padding: 8px 0 8px 0;
-    margin-right: 23px;
 }

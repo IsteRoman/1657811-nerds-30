@@ -1098,6 +1098,7 @@ margin-top: 55px;
 
 .map-container {
   position: relative;
+  box-sizing: border-box;
 }
 
 .map-container::before {
@@ -1120,6 +1121,7 @@ margin-top: 55px;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .company {
@@ -1148,6 +1150,17 @@ margin-top: 55px;
   margin: 0;
   margin-bottom: 34px;
   margin-left: 50px;
+}
+
+.interactive-map {
+  position: absolute;
+  top: 0;
+  width:  100%;
+}
+
+.map-iframe {
+  width: 100%;
+  border: none
 }
 
 .button-open-form {

@@ -1098,7 +1098,7 @@ margin-top: 55px;
 
 .map-container {
   position: relative;
-  box-sizing: border-box;
+  max-height: 416px;
 }
 
 .map-container::before {
@@ -1111,11 +1111,16 @@ margin-top: 55px;
   transform: translate(860px, 86px);
 }
 
+.map-img {
+  width: 1440px;
+  height: 416px;
+}
+
 .contacts {
   position: absolute;
   width: 319px;
   min-height: 308px;
-  transform: translate(180px, -390px);
+  transform: translate(180px, -367px);
   background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
@@ -1179,7 +1184,7 @@ margin-top: 55px;
   grid-template-columns: 270px 1fr;
   gap: 130px;
   align-items: center;
-  padding-top: 46px;
+  padding-top: 53px;
   padding-bottom: 68px;
 }
 

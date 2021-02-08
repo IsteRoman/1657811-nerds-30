@@ -37,17 +37,18 @@
         <form class="form-catalog" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="fieldset">
             <legend class="legend">Стоимость:</legend>
-            <div class="range-line-container">
-              <div class="main-line">
-                <div class="top-line">
-                  <span class="circle first-hend"></span>
-                  <span class="circle last-hend"></span>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
-            </div>
-            <div>
-              <input type="number">
-              <input type="number">
+              <div class="price-controls">
+                ОТ <input class="price min-price" type="text" value="0">
+                ДО <input class="price max-price" type="text" value="15 000">
+              </div>
             </div>
           </fieldset>
           <fieldset class="fieldset">
@@ -221,6 +222,6 @@
     </form>
     <button class="close" type="button">Закрыть</button>
   </div>
-  <script src="js/Scr.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

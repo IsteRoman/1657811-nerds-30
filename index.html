@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/normailze.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -18,16 +18,16 @@
         </a>
         <ul class="navigation-list">
           <li class="pusher">
-            <a href="#">Студия</a>
+            <a class="nav-item" href="#">Студия</a>
           </li>
           <li class="pusher">
-            <a href="#">Клиенты</a>
+            <a class="nav-item" href="#">Клиенты</a>
           </li>
           <li class="pusher">
-            <a href="catalog.html">Магазин</a>
+            <a class="nav-item" href="catalog.html">Магазин</a>
           </li>
           <li class="pusher">
-            <a href="#">Контакты</a>
+            <a class="nav-item" href="#">Контакты</a>
           </li>
         </ul>
         <a class="basket-link" href="#">Корзина</a>
@@ -39,24 +39,30 @@
         <div class="wrapper first-wrapper">
           <h2 class=hidden>Наши преимущества</h2>
           <div class="slider first-slide">
-            <p class="slider-title"><strong class="strong">Долго, дорого, скрупулезно.</strong></p>
+            <p class="slider-title">
+              <strong class="strong">Долго, дорого, скрупулезно.</strong>
+            </p>
             <p class="slider-text">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </div>
           <div class="slider second-slide element-hidden ">
-            <p class="slider-title"><strong class="strong">Любим математику как&nbsp;никто другой</strong></p>
+            <p class="slider-title">
+              <strong class="strong">Любим математику как&nbsp;никто другой</strong>
+            </p>
             <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </div>
           <div class="slider third-slide element-hidden ">
-            <p class="slider-title"><strong class="strong">Только ночь, только&nbsp;хардкор</strong></p>
+            <p class="slider-title">
+              <strong class="strong">Только ночь, только&nbsp;хардкор</strong>
+            </p>
             <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </div>
           <div class="slider-buttons">
-            <button class="slide-btn first slide-btn-active" type="button"></button>
-            <button class="slide-btn second" type="button"></button>
-            <button class="slide-btn third" type="button"></button>
+            <button class="slide-btn first slide-btn-active" type="button" aria-label="Первый слайд"></button>
+            <button class="slide-btn second" type="button" aria-label="Второй слайд"></button>
+            <button class="slide-btn third" type="button" aria-label="Третий слайд"></button>
           </div>
         </div>
       </section>
@@ -84,13 +90,15 @@
         <h2 class="hidden">О нас</h2>
         <div class="main-information">
           <div class="about">
-            <p class="tagline"><strong class="strong">Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
+            <p class="tagline">
+              <strong class="strong">Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong>
+            </p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше&nbsp;креатива. Работаем не покладая рук, как роботы.</p>
             <p class="subtitle">Выполняем заказы на разработку:</p>
             <ul class="possibility-list">
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
+              <li class="possibility-item">Веб-сайтов любой сложности</li>
+              <li class="possibility-item">Мобильных приложений для iOS и Android</li>
+              <li class="possibility-item">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
           <div class="opportunities">
@@ -112,22 +120,22 @@
           <ul class="partners">
             <li>
               <a class="partner-img" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-1 1.svg" width="199" height="68" alt="Html-academy">
+                <img src="img/logo-1.svg" width="199" height="68" alt="Html-academy">
               </a>
             </li>
             <li class="partner">
               <a class="partner-img" href="#">
-                <img src="img/logo-2 1.png" width="209" height="90" alt="Borodinski">
+                <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
               </a>
             </li>
             <li class="partner">
               <a class="partner-img" href="#">
-                <img src="img/logo-3 1.png" width="185" height="52" alt="Pink">
+                <img src="img/logo-3.png" width="185" height="52" alt="Pink">
               </a>
             </li>
             <li class="partner">
               <a class="partner-img" href="#">
-                <img src="img/logo-4 1.png" width="173" height="84" alt="Mishka">
+                <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
               </a>
             </li>
           </ul>
@@ -135,30 +143,36 @@
       </section>
       <section class="map-container">
         <h2 class="hidden">Наши контакты</h2>
-        <img class="map-img" src="img/map 1.jpg" width="100%" height="416" alt="Карта с адресом 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Карта с адресом 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <div class="contacts">
           <p class="company">NЁRDS DESIGN STUDIO</p>
           <address class="address">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</address>
           <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <button class="button button-open-form" type="button">НАПИШИТЕ НАМ</button>
         </div>
-        <div class="interactive-map" style="position:absolute;overflow:hidden;">
-          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
-          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322117%2C59.938659&utm_medium=mapframe&utm_source=maps&z=18.39" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
-          <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CCUMJAbbxD" width="100%" height="416" allowfullscreen="true"></iframe>
+        <div class="interactive-map">
+          <a class="interactive-map-link-first" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">Санкт‑Петербург</a>
+          <a class="interactive-map-link-second" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322117%2C59.938659&utm_medium=mapframe&utm_source=maps&z=18.39">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+          <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CCUMJAbbxD" width="560" height="416"></iframe>
         </div>
       </section>
     </main>
     <footer class="main-footer wrapper">
       <ul class="social">
         <li>
-          <a class="social-button" href="#"><img class="social-img" src="img/vk-icon.svg" width="26" height="15" alt="VK"></a>
+          <a class="social-button" href="#">
+            <img class="social-img" src="img/vk-icon.svg" width="26" height="15" alt="VK">
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#"><img class="social-img" src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+          <a class="social-button" href="#">
+            <img class="social-img" src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#"><img class="social-img" src="img/insta-icon.svg" width="21" height="21" alt="Instagram"></a>
+          <a class="social-button" href="#">
+            <img class="social-img" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
+          </a>
         </li>
       </ul>
       <div class="pseudo-slogan">
@@ -170,8 +184,12 @@
       <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="modal-user-main-inform">
-          <label class="modal-label" for="user-name">Ваше имя: <input class="modal-input" id="user-name" type="text" name="user_name" placeholder="Имя Фамилия"></label>
-          <label class="modal-label" for="user-email">Ваш email: <input class="modal-input" id="user-email" type="email" name="user_email" placeholder="email@example.com"></label>
+          <label class="modal-label" for="user-name">Ваше имя:
+            <input class="modal-input" id="user-name" type="text" name="user_name" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-label" for="user-email">Ваш email:
+            <input class="modal-input" id="user-email" type="email" name="user_email" placeholder="email@example.com">
+          </label>
         </div>
         <div class="modal-user-review">
           <label class="modal-label" for="user-review">Текст письма:</label>
@@ -179,7 +197,7 @@
         </div>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
-      <button class="close" type="button">Закрыть</button>
+      <button class="close" type="button" aria-label="Закрыть">Закрыть</button>
     </div>
     <script src="js/slider.js"></script>
     <script src="js/modal.js"></script>

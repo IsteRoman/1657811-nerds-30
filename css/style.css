@@ -156,20 +156,20 @@ img {
   top: 8px;
 }
 
-.navigation-list a,
+.navigation-list .nav-item,
 .basket-link {
   color: var(--basic-black);
   transition: var(--default-transition);
 }
 
-.navigation-list a:hover,
+.navigation-list .nav-item:hover,
 .basket-link:hover,
-.navigation-list a:focus,
+.navigation-list .nav-item:focus,
 .basket-link:focus {
   color: var(--basic-light-red);
 }
 
-.navigation-list a:active,
+.navigation-list .nav-item:active,
 .basket-link:active {
   opacity: 30%;
 }
@@ -220,15 +220,15 @@ img {
 }
 
 .first-slide {
-  background: url("../img/nerds-index-slide1\ 1.png") bottom right no-repeat;
+  background: url("../img/nerds-index-slide1.png") bottom right no-repeat;
 }
 
 .second-slide {
-  background: url("../img/nerds-index-slide2\ 1.png") bottom right no-repeat;
+  background: url("../img/nerds-index-slide2.png") bottom right no-repeat;
 }
 
 .third-slide {
-  background: url("../img/nerds-index-slide3\ 1.png") bottom right no-repeat;
+  background: url("../img/nerds-index-slide3.png") bottom right no-repeat;
 }
 
 .slider-title {
@@ -528,7 +528,7 @@ opacity: 30%;
   display: block;
   width: 300px;
   height: 146px;
-  background: url("../img/illustration-1\ 1.jpg") 0 0 no-repeat;
+  background: url("../img/illustration-1.jpg") 0 0 no-repeat;
   background-color: var(--basic-light-red);
 }
 
@@ -537,7 +537,7 @@ opacity: 30%;
   display: block;
   width: 300px;
   height: 146px;
-  background: url("../img/illustration-2\ 1.jpg") 0 0 no-repeat;
+  background: url("../img/illustration-2.jpg") 0 0 no-repeat;
   background-color: var(--basic-light-green);
 }
 
@@ -546,7 +546,7 @@ opacity: 30%;
   display: block;
   width: 300px;
   height: 146px;
-  background: url("../img/illustration-3\ 1.jpg") 0 0 no-repeat;
+  background: url("../img/illustration-3.jpg") 0 0 no-repeat;
   background-color: var(--basic-light-yellow);
 }
 
@@ -608,7 +608,7 @@ opacity: 30%;
   padding-left: 36px;
 }
 
-.possibility-list li::before {
+.possibility-item::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -629,7 +629,7 @@ opacity: 30%;
   display: block;
   width: 366px;
   height: 208px;
-  background: url(../img/nerds-illustration\ 1.png) top center no-repeat;
+  background: url(../img/nerds-illustration.png) top center no-repeat;
   background-size: 360px, 208px;
   background-color: var(--basic-white);
 }
@@ -878,11 +878,11 @@ margin-top: 55px;
   transition: var(--default-transition);
 }
 
-.rad[type=radio] +.rad-title::after {
+.rad +.rad-title::after {
   content: none;
 }
 
-.rad[type=radio]:checked +.rad-title::after {
+.rad:checked +.rad-title::after {
   content: "";
 }
 
@@ -893,8 +893,8 @@ margin-top: 55px;
   opacity: 100%;
 }
 
-.rad[type=radio]:disabled +.rad-title::before,
-.rad[type=radio]:disabled +.rad-title::after {
+.rad:disabled +.rad-title::before,
+.rad:disabled +.rad-title::after {
   opacity: 10%;
 }
 
@@ -942,16 +942,16 @@ margin-top: 55px;
   transition: var(--default-transition);
   transform: translate(-39px, -20px);
 }
-.check[type=checkbox]:checked +.check-title::before {
+.check:checked +.check-title::before {
   content: none;
 }
-.check[type=checkbox]:checked +.check-title::after {
+.check:checked +.check-title::after {
   content: "";
 }
-.check[type=checkbox] +.check-title::before {
+.check +.check-title::before {
   content: "";
 }
-.check[type=checkbox] +.check-title::after {
+.check +.check-title::after {
   content: none;
 }
 
@@ -962,8 +962,8 @@ margin-top: 55px;
   opacity: 100%;
 }
 
-.check[type=checkbox]:disabled +.check-title::before,
-.check[type=checkbox]:disabled +.check-title::after {
+.check:disabled +.check-title::before,
+.check:disabled +.check-title::after {
   opacity: 10%;
 }
 
@@ -1153,12 +1153,13 @@ margin-top: 55px;
   display: block;
   width: 231px;
   height: 190px;
-  background: url("../img/map-marker\ 1.png") 0 0 no-repeat;
+  background: url("../img/map-marker.png") 0 0 no-repeat;
   transform: translate(860px, 86px);
 }
 
 .map-img {
   object-fit: fill;
+  width: 100%;
   height: 416px;
 }
 
@@ -1207,6 +1208,19 @@ margin-top: 55px;
   position: absolute;
   top: 0;
   width:  100%;
+  overflow: hidden;
+}
+
+.interactive-map-link-first,
+.interactive-map-link-second {
+  color: var(--basic-extra-light-gray);
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+}
+
+.interactive-map-link-second {
+  top: 14px;
 }
 
 .map-iframe {

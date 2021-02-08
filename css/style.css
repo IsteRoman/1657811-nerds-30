@@ -80,10 +80,10 @@ img {
 }
 
 .wrapper {
-
-width: 1157px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0 auto;
-  padding: 0 141px 0 140px;
+  padding: 0 20px;
 }
 
 .header-pusher {

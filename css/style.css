@@ -1112,7 +1112,7 @@ margin-top: 55px;
 }
 
 .map-img {
-  width: 1440px;
+  object-fit: fill;
   height: 416px;
 }
 

@@ -1,11 +1,11 @@
-let open_form = document.querySelector('.button-open-form');
-let modal_form = document.querySelector('.modal');
-let close_form = document.querySelector('.close');
+const open_form = document.querySelector('.button-open-form');
+const modal_form = document.querySelector('.modal');
+const close_form = document.querySelector('.close');
 
-open_form.onclick = function() {
+open_form.addEventListener('click', function() {
   modal_form.classList.remove('element-hidden');
-}
+});
 
-close_form.onclick = function() {
+close_form.addEventListener('click', function() {
   modal_form.classList.add('element-hidden');
-}
+});

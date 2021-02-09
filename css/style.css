@@ -365,6 +365,7 @@ img {
   margin: 0;
   padding: 0;
   background-color: var(--basic-extra-light-gray);
+  color: var(--basic-black)
 }
 
 .gray:hover,
@@ -374,6 +375,7 @@ img {
 
 .gray:active {
   background-color: var(--basic-push-gray);
+  color:rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -848,6 +850,7 @@ margin-top: 55px;
   background-color: var(--basic-toggle);
   cursor: pointer;
   border-radius: 50%;
+  box-sizing: content-box;
 }
 
 .max-toggle {

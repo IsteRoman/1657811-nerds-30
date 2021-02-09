@@ -81,7 +81,7 @@ img {
 
 .wrapper {
   width: 100%;
-  min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -247,7 +247,7 @@ img {
 }
 
 .slider-text {
-  width: 400px;
+  width: 410px;
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
@@ -574,7 +574,7 @@ opacity: 30%;
 .main-information {
   display: grid;
   grid-template-columns: 1fr 360px ;
-  gap: 40px;
+  gap: 149px;
 }
 
 .about {

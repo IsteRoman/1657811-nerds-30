@@ -48,7 +48,14 @@
   --default-transition: 0.15s ease-in-out;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page {
+  box-sizing: border-box;
   height: 100%;
 }
 

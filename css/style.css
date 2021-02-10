@@ -197,15 +197,17 @@ img {
   border-bottom: 2px solid var(--basic-light-red);
 }
 
-.hidden {
-  visibility: hidden;
+.visually-hidden {
   position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  margin: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .element-hidden {
@@ -504,6 +506,7 @@ img {
   height: 81px;
   width: 81px;
   border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 .social-button:not(:nth-last-of-type(3n)) {

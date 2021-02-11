@@ -795,12 +795,12 @@ opacity: 30%;
 }
 
 .fieldset:nth-of-type(3n) {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .legend {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   font-size: 18px;
   line-height: 1.66;
   font-weight: 700;
@@ -975,7 +975,7 @@ opacity: 30%;
   border-radius: 3px;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-36px, 0);
+  transform: translate(-36px, -4px);
 
 }
 
@@ -988,7 +988,7 @@ opacity: 30%;
   background: url(../img/checkbox-on.svg) 0 0 no-repeat;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-36.3px, -18.7px);
+  transform: translate(-36px, -22px);
 }
 
 .check:checked + .check-title::before {
@@ -1215,7 +1215,7 @@ opacity: 30%;
   width: 231px;
   height: 190px;
   background: url("../img/map-marker.png") 0 0 no-repeat;
-  transform: translate(860px, 86px);
+  transform: translate(1102px, 86px);
 }
 
 .map-img {
@@ -1234,7 +1234,7 @@ opacity: 30%;
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: var(--basic-white);
-  transform: translate(180px, -367px);
+  transform: translate(372px, -369px);
 }
 
 .company {
@@ -1300,7 +1300,7 @@ opacity: 30%;
   grid-template-columns: 270px 1fr;
   gap: 130px;
   align-items: center;
-  padding-top: 53px;
+  padding-top: 50px;
   padding-bottom: 68px;
   font-size: 16px;
   line-height: 1.375;

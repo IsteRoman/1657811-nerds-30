@@ -48,6 +48,7 @@
   --basic-toggle: #ababab;
   --basic-rgba-white-opacity-0-3: rgba(255, 255, 255, 0.3);
   --basic-rgba-extra-black-opacity-0-1: rgba(0, 1, 1, 0.1);
+  --basic-rgba-extra-black-opacity-0-15: rgba(0, 1, 1, 0.15);
   --basic-rgba-extra-black-opacity-0-25: rgba(0, 1, 1, 0.25);
   --basic-rgba-extra-black-opacity-0-1: rgba(0, 1, 1, 0.1);
   --basic-rgba-black-opacity-0-3: rgba(0, 0, 0, 0.3);
@@ -167,7 +168,6 @@ img {
   position: absolute;
   left: -40px;
   top: 8px;
-  display: inline-block;
   width: 15px;
   height: 15px;
   background: url("../img/cart-icon.svg") 0 0 no-repeat;
@@ -520,7 +520,6 @@ img {
 }
 
 .social-img {
-  display: inline;
   transition: var(--default-transition);
 }
 
@@ -638,7 +637,6 @@ opacity: 30%;
   content: "";
   position: absolute;
   left: 0;
-  display: inline-block;
   width: 25px;
   height: 2px;
   padding-top: 9px;
@@ -655,7 +653,7 @@ opacity: 30%;
   display: block;
   width: 366px;
   height: 208px;
-  background-color: var(--basic-white);
+  background-color: var(--basic-black);
   background: url(../img/nerds-illustration.png) top center no-repeat;
   background-size: 360px, 208px;
 }
@@ -745,7 +743,6 @@ opacity: 30%;
 .partner:not(:first-of-type)::before {
   content: "";
   position: absolute;
-  display: inline-block;
   width: 2px;
   height: 52px;
   border-left: 2px solid var(--basic-extra-light-gray);
@@ -819,8 +816,8 @@ opacity: 30%;
 .range-controls {
   position: relative;
   height: 80px;
-  margin-bottom: 14px;
-  padding: 0 22px 0 33px;
+  margin-bottom: 15px;
+  padding: 0 20px 0 20px;
   background-color: var(--basic-extra-light-gray);
   border-radius: 3px;
   overflow: hidden;
@@ -833,7 +830,6 @@ opacity: 30%;
 }
 
 .bar {
-  width: 138px;
   height: 2px;
   background-color: var(--basic-light-green);
 }
@@ -848,6 +844,7 @@ opacity: 30%;
   background-color: var(--basic-toggle);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
+  box-shadow: 0px 2px 1px var(--basic-rgba-extra-black-opacity-0-15);
   cursor: pointer;
 }
 
@@ -858,7 +855,7 @@ opacity: 30%;
 .min-price,
 .max-price {
   width: 80px;
-  margin-left: 11px;
+  margin-left: 10px;
   padding: 8px 0;
   font-size: 16px;
   line-height: 1.375;
@@ -872,7 +869,7 @@ opacity: 30%;
 }
 
 .min-price {
-  margin-right: 23px;
+  margin-right: 25px;
   padding: 8px 0 8px 0;
 }
 
@@ -888,7 +885,7 @@ opacity: 30%;
 
 .radio .rad-title {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-bottom: 22px;
   padding-left: 35px;
   outline: 0;
@@ -898,7 +895,6 @@ opacity: 30%;
 .radio .rad-title::before {
   content: "";
   position: absolute;
-  display: inline-block;
   width: 25px;
   height: 25px;
   border: 4px solid var(--basic-radio-check);
@@ -958,7 +954,7 @@ opacity: 30%;
 
 .checkbox .check-title {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-bottom: 21px;
   padding-left: 36px;
   outline: 0;
@@ -968,7 +964,6 @@ opacity: 30%;
 .checkbox .check-title::before {
   content: "";
   position: absolute;
-  display: inline-block;
   width: 23px;
   height: 22.5px;
   border: 2px solid var(--basic-radio-check);
@@ -1221,6 +1216,7 @@ opacity: 30%;
 .map-img {
   width: 100%;
   height: 416px;
+  background-color: var(--basic-black);
   object-fit: fill;
 }
 
@@ -1477,9 +1473,9 @@ opacity: 30%;
 .close::after {
   content: "";
   position: absolute;
-  top:-448px;
+  top: -448px;
   left: 756px;
-  display: inline-block;
+  display: block;
   width: 4px;
   height: 23px;
   background-color: var(--basic-light-red);

@@ -158,6 +158,7 @@ img {
 .basket-link {
   position: relative;
   margin: 0;
+  margin-left: auto;
   text-transform: uppercase;
 }
 
@@ -272,13 +273,14 @@ img {
 
 .slider-buttons {
   position: absolute;
+  top: 307px;
+  left: 555px;
   display: flex;
   justify-content: space-between;
   width: 88px;
   min-height: 18px;
   margin: 0;
   padding: 0;
-  transform: translate(536px, -114px);
 }
 
 .slide-btn {
@@ -895,18 +897,22 @@ opacity: 30%;
 .radio .rad-title::before {
   content: "";
   position: absolute;
+  top: -5px;
+  left: 0;
   width: 25px;
   height: 25px;
   border: 4px solid var(--basic-radio-check);
   border-radius: 50%;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-35px, -14%);
+
 }
 
 .radio .rad-title::after {
   content: "";
   position: absolute;
+  top: 3px;
+  left: 8px;
   display: block;
   width: 9px;
   height: 9px;
@@ -914,7 +920,7 @@ opacity: 30%;
   border-radius: 50%;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-27px, -153%);
+
 }
 
 .rad + .rad-title::after {
@@ -964,26 +970,27 @@ opacity: 30%;
 .checkbox .check-title::before {
   content: "";
   position: absolute;
+  top: -5px;
+  left: 0;
   width: 23px;
   height: 22.5px;
   border: 2px solid var(--basic-radio-check);
   border-radius: 3px;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-36px, -4px);
-
 }
 
 .checkbox .check-title::after {
   content: "";
   position: absolute;
+  top: -5px;
+  left: 0;
   display: block;
   width: 25px;
   height: 23px;
   background: url(../img/checkbox-on.svg) 0 0 no-repeat;
   opacity: 40%;
   transition: var(--default-transition);
-  transform: translate(-36px, -22px);
 }
 
 .check:checked + .check-title::before {
@@ -1070,6 +1077,7 @@ opacity: 30%;
   display: flex;
   align-items: center;
   margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -1117,6 +1125,8 @@ opacity: 30%;
 .good::after {
   content: "";
   position: absolute;
+  top: 14px;
+  left: 15px;
   display: block;
   width: 14px;
   height: 14px;
@@ -1124,7 +1134,7 @@ opacity: 30%;
   border-radius: 50%;
   box-shadow: 23px 0 0 var(--basic-white),
   46px 0 0 var(--basic-white);
-  transform: translate(16px, -608px);
+
 }
 
 .good:hover::before,
@@ -1138,7 +1148,7 @@ opacity: 30%;
   box-shadow: 0px 6px 15px var(--basic-rgba-extra-black-opacity-0-25);
 }
 
-.good:hover .goods-information{
+.good:hover .goods-information {
   opacity: 1;
   transform: translate( 0, -100%);
 }
@@ -1213,6 +1223,8 @@ opacity: 30%;
 
 .contacts {
   position: absolute;
+  top: 13%;
+  left: 19.5%;
   z-index: 2;
   width: 319px;
   min-height: 308px;
@@ -1221,7 +1233,7 @@ opacity: 30%;
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: var(--basic-white);
-  transform: translate(372px, -369px);
+
 }
 
 .company {

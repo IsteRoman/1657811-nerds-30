@@ -9,6 +9,7 @@ const third_slide = document.querySelector('.third-slide');
 const third = document.querySelector('.third');
 const open_form = document.querySelector('.button-open-form');
 const modal_form = document.querySelector('.modal');
+const login = modal_form.querySelector('[name=user_name]');
 const close_form = document.querySelector('.close');
 
 if (sliders_block) {
@@ -22,19 +23,22 @@ if (sliders_block) {
       slide_buttons[i].classList.remove('slide-btn-active');
     }
   }
-  first.addEventListener('click', function() {
+  first.addEventListener('click', function(evt) {
+    evt.preventDefault();
     sliders_clear();
     button_clear();
     first_slide.classList.remove('element-hidden');
     first.classList.add('slide-btn-active');
   });
-  second.addEventListener('click', function() {
+  second.addEventListener('click', function(evt) {
+    evt.preventDefault();
     sliders_clear();
     button_clear();
     second_slide.classList.remove('element-hidden');
     second.classList.add('slide-btn-active');
   });
-  third.addEventListener('click', function() {
+  third.addEventListener('click', function(evt) {
+    evt.preventDefault();
     sliders_clear();
     button_clear();
     third_slide.classList.remove('element-hidden');
@@ -43,11 +47,21 @@ if (sliders_block) {
 }
 
 if (modal_form) {
-  open_form.addEventListener('click', function() {
+  open_form.addEventListener('click', function(evt) {
+    evt.preventDefault();
     modal_form.classList.remove('element-hidden');
+    login.focus();
   });
 
-  close_form.addEventListener('click', function() {
+  close_form.addEventListener('click', function(evt) {
+    evt.preventDefault();
     modal_form.classList.add('element-hidden');
   });
+
+  window.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      modal_form.classList.add('element-hidden');
+    }
+  })
 }

@@ -19,6 +19,50 @@
   src: url(../fonts/robotomedium.woff2) format("woff2"), url("../fonts/robotomedium.woff") format("woff");
 }
 
+@keyframes good-appearance {
+  0% {
+    left: -1000px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animation-appearance {
+  0% {
+    top: -1000px;
+    opacity: 0;
+  }
+  25% {
+    top: -500px;
+    opacity: 0.25;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: -250px;
+    opacity: 0.5;
+    transform: rotate(-45deg);
+  }
+  100% {
+    top: calc(50% - 300px);
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes animation-disappeared {
+  0% {
+    top: calc(50% - 300px);
+    transform: scale(1);
+  }
+  100% {
+    top: calc(50% - 300px);
+    transform: scale(0);
+  }
+}
+
 :root {
   --basic-black: #000000;
   --basic-active-pagination: #dbdbdb;
@@ -1095,6 +1139,8 @@ opacity: 30%;
 }
 
 .catalog-img {
+  display: inline-block;
+  vertical-align: bottom;
   width: 358px;
   height: 578px;
   object-fit: contain;
@@ -1149,13 +1195,17 @@ opacity: 30%;
   box-shadow: 0px 6px 15px var(--basic-rgba-extra-black-opacity-0-25);
 }
 
-.good:hover .goods-information {
-  opacity: 1;
-  transform: translate( 0, -100%);
+.good:hover .goods-information,
+.good:focus .goods-information  {
+  animation-name: good-appearance;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .goods-information {
   position: absolute;
+  top: 389px;
+  left: -1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1163,9 +1213,8 @@ opacity: 30%;
   margin: 0;
   padding: 26px 52px 44px 52px;
   background-color: var(--basic-extra-light-gray);
-  opacity: 0;
   transition: var(--default-transition);
-  transform: translate(-100%, -100%);
+
 }
 
 .goods-title {
@@ -1345,7 +1394,7 @@ opacity: 30%;
 .modal {
   position: fixed;
   z-index: 3;
-  top: calc(50% - 300px);
+  top: -1000px;
   left: calc(50% - 480px);
   min-height: 590px;
   padding-right: 99px;
@@ -1507,4 +1556,16 @@ opacity: 30%;
 .close:active:before,
 .close:active::after {
   opacity: 10%;
+}
+
+.animation-appearance {
+  animation-name: animation-appearance;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animation-disappeared {
+  animation-name: animation-disappeared;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }

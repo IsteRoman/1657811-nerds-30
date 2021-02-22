@@ -119,6 +119,7 @@ img {
 }
 
 .main-logo {
+  flex-shrink: 0;
   height: min-content;
   margin-right: 202px;
   color: var(--basic-black);
@@ -144,8 +145,8 @@ img {
   justify-content: flex-start;
   align-items: flex-end;
   flex-wrap: wrap;
+  width: 437px;
   margin: 0;
-  margin-right: 288px;
   padding-left: 0;
   text-transform: uppercase;
   list-style: none;

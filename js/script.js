@@ -10,7 +10,10 @@ const third = document.querySelector('.third');
 const open_form = document.querySelector('.button-open-form');
 const modal_form = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
+const form = modal_form.querySelector('.modal-form');
 const login = modal_form.querySelector('[name=user_name]');
+const email = modal_form.querySelector('[name=user_email]');
+const review = modal_form.querySelector('[name=review]');
 const close_form = document.querySelector('.close');
 
 if (sliders_block) {
@@ -50,6 +53,7 @@ if (sliders_block) {
 if (modal_form) {
   open_form.addEventListener('click', function(evt) {
     evt.preventDefault();
+    modal_form.classList.add('animation-appearance');
     modal_form.classList.remove('element-hidden');
     overlay.classList.remove('element-hidden');
     login.focus();
@@ -57,13 +61,30 @@ if (modal_form) {
 
   close_form.addEventListener('click', function(evt) {
     evt.preventDefault();
+    modal_form.classList.remove('animation-appearance');
+    modal_form.classList.remove('animation-error');
     modal_form.classList.add('element-hidden');
     overlay.classList.add('element-hidden');
+  });
+
+  form.addEventListener('submit', function(evt) {
+    if (!login.value || !email.value || !review.value) {
+      evt.preventDefault();
+      modal_form.classList.remove('animation-error');
+      modal_form.offsetWidth = modal_form.offsetWidth;
+      modal_form.classList.add('animation-error');
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem('login', login.value);
+      }
+    }
   });
 
   window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
+      modal_form.classList.remove('animation-appearance');
+      modal_form.classList.remove('animation-error');
       modal_form.classList.add('element-hidden');
       overlay.classList.add('element-hidden');
     }
@@ -71,6 +92,8 @@ if (modal_form) {
 
   overlay.addEventListener('click', function(evt) {
     evt.preventDefault();
+    modal_form.classList.remove('animation-appearance');
+    modal_form.classList.remove('animation-error');
     modal_form.classList.add('element-hidden');
     overlay.classList.add('element-hidden');
   });

@@ -52,13 +52,31 @@
   }
 }
 
+@keyframes animation-error {
+  0% {
+    border: 2px solid var(--basic-red);
+    top: calc(50% - 290px);
+  }
+  25% {
+    border: 2px solid var(--basic-red);
+    top: calc(50% - 310px);
+  }
+  50% {
+    border: 2px solid var(--basic-red);
+    top: calc(50% - 290px);
+  }
+  100% {
+    border: 2px solid var(--basic-red);
+    top: calc(50% - 300px);
+  }
+}
+
+
 @keyframes animation-disappeared {
   0% {
-    top: calc(50% - 300px);
     transform: scale(1);
   }
   100% {
-    top: calc(50% - 300px);
     transform: scale(0);
   }
 }
@@ -339,6 +357,12 @@ img {
   border-radius: 50%;
   outline: 0;
   cursor: pointer;
+}
+
+.slide-btn:focus {
+  border: 1px solid black;
+  border-radius: 50%;
+
 }
 
 .slide-btn-active::after {
@@ -1185,7 +1209,7 @@ opacity: 30%;
 }
 
 .good:hover::before,
-.good:focus::before{
+.good:focus-within::before{
   opacity: 100%;
 }
 
@@ -1196,7 +1220,7 @@ opacity: 30%;
 }
 
 .good:hover .goods-information,
-.good:focus .goods-information  {
+.good:focus-within .goods-information  {
   animation-name: good-appearance;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -1578,4 +1602,9 @@ opacity: 30%;
   animation-name: animation-disappeared;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+
+.animation-error {
+  animation-name: animation-error;
+  animation-duration: 1.5s;
 }

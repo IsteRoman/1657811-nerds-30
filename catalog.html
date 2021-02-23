@@ -50,8 +50,10 @@
                 <div class="toggle max-toggle" tabindex="0" style="left: 62%"></div>
               </div>
               <div class="price-controls">
-                ОТ <input class="price min-price" type="text" value="0">
-                ДО <input class="price max-price" type="text" value="15 000">
+                <label class="price-controls-label" for="minprice">от</label>
+                <input class="price min-price" type="text" id="minprice" name="min-price" value="0">
+                <label class="price-controls-label" for="maxprice">до</label>
+                <input class="price max-price" type="text" id="maxprice" name="max-price" value="15 000">
               </div>
             </div>
           </fieldset>
@@ -97,7 +99,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button gray" type="submit">ПОКАЗАТЬ</button>
+          <button class="button gray submit-button" type="submit">ПОКАЗАТЬ</button>
         </form>
         <section class="main-content">
           <div class="filter">
@@ -105,7 +107,7 @@
             <div class="filter-buttons">
               <ul class="filter-list">
                 <li class="filter-item">
-                  <button class="btn-text" type="button">По цене</button>
+                  <button class="btn-text filter-active-btn" type="button">По цене</button>
                 </li>
                 <li class="filter-item">
                   <button class="btn-text" type="button">По типу</button>
@@ -115,7 +117,7 @@
                 </li>
               </ul>
               <div class="filter-arrow-btn">
-                <button class="arrow-btn-down" type="button" aria-label="Сортировать по убыванию"></button>
+                <button class="arrow-btn-down filter-active-btn-arrow" type="button" aria-label="Сортировать по убыванию"></button>
                 <button class="arrow-btn-up" type="button" aria-label="Сортировать по возрастанию"></button>
               </div>
             </div>
@@ -171,7 +173,7 @@
             </li>
           </ul>
           <ul class="pagination">
-            <li><a class="button btn-pagination active-pagination" href="#">1</a></li>
+            <li><a class="button btn-pagination active-pagination">1</a></li>
             <li><a class="button btn-pagination" href="#">2</a></li>
             <li><a class="button btn-pagination" href="#">3</a></li>
             <li><a class="button btn-pagination btn-pagination-big" href="#">Следующая</a></li>
@@ -185,7 +187,7 @@
           <p class="company">NЁRDS DESIGN STUDIO</p>
           <address class="address">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</address>
           <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <button class="button button-open-form" type="button" href="form.html">НАПИШИТЕ НАМ</button>
+          <a class="button button-open-form" href="form.html">НАПИШИТЕ НАМ</a>
         </div>
         <div class="interactive-map">
           <a class="interactive-map-link-first" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">Санкт‑Петербург</a>
@@ -197,17 +199,17 @@
   <footer class="main-footer wrapper">
     <ul class="social">
       <li>
-        <a class="social-button" href="#">
+        <a class="social-button" href="#" title="VK">
           <img class="social-img" src="img/vk-icon.svg" width="26" height="15" alt="VK">
         </a>
       </li>
       <li>
-        <a class="social-button" href="#">
+        <a class="social-button" href="#" title="Facebook">
           <img class="social-img" src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
         </a>
       </li>
       <li>
-        <a class="social-button" href="#">
+        <a class="social-button" href="#" title="Instagram">
           <img class="social-img" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
         </a>
       </li>

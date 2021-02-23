@@ -36,7 +36,7 @@ if (sliders_block) {
   second.addEventListener('click', function(evt) {
     evt.preventDefault();
     slidersClear();
-    button_Clear();
+    buttonClear();
     second_slide.classList.remove('element-hidden');
     second.classList.add('slide-btn-active');
   });

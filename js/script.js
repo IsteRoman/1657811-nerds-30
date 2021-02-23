@@ -9,6 +9,7 @@ const third_slide = document.querySelector('.third-slide');
 const third = document.querySelector('.third');
 const open_form = document.querySelector('.button-open-form');
 const modal_form = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
 const login = modal_form.querySelector('[name=user_name]');
 const close_form = document.querySelector('.close');
 
@@ -50,18 +51,27 @@ if (modal_form) {
   open_form.addEventListener('click', function(evt) {
     evt.preventDefault();
     modal_form.classList.remove('element-hidden');
+    overlay.classList.remove('element-hidden');
     login.focus();
   });
 
   close_form.addEventListener('click', function(evt) {
     evt.preventDefault();
     modal_form.classList.add('element-hidden');
+    overlay.classList.add('element-hidden');
   });
 
   window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       modal_form.classList.add('element-hidden');
+      overlay.classList.add('element-hidden');
     }
   })
+
+  overlay.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    modal_form.classList.add('element-hidden');
+    overlay.classList.add('element-hidden');
+  });
 }

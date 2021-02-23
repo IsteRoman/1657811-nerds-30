@@ -1393,7 +1393,7 @@ opacity: 30%;
 
 .modal {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   top: -1000px;
   left: calc(50% - 480px);
   min-height: 590px;
@@ -1556,6 +1556,16 @@ opacity: 30%;
 .close:active:before,
 .close:active::after {
   opacity: 10%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  z-index: 3;
 }
 
 .animation-appearance {

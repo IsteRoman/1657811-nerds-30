@@ -51,18 +51,36 @@ if (sliders_block) {
 }
 
 if (modal_form) {
+
+  let isStorageSupport = true;
+  const storage = '';
+
+  try {
+    storage = localStorage.getItem('login');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
   open_form.addEventListener('click', function(evt) {
     evt.preventDefault();
+    modal_form.classList.remove('animation-disappeared');
     modal_form.classList.add('animation-appearance');
     modal_form.classList.remove('element-hidden');
     overlay.classList.remove('element-hidden');
-    login.focus();
+
+    if (storage) {
+      login.value = storage;
+      email.focus();
+    } else {
+      login.focus();
+    }
   });
 
   close_form.addEventListener('click', function(evt) {
     evt.preventDefault();
     modal_form.classList.remove('animation-appearance');
     modal_form.classList.remove('animation-error');
+    modal_form.classList.add('animation-disappeared');
     modal_form.classList.add('element-hidden');
     overlay.classList.add('element-hidden');
   });

@@ -9,7 +9,6 @@ const third_slide = document.querySelector('.third-slide');
 const third = document.querySelector('.third');
 const open_form = document.querySelector('.button-open-form');
 const modal_form = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
 const form = modal_form.querySelector('.modal-form');
 const login = modal_form.querySelector('[name=user_name]');
 const email = modal_form.querySelector('[name=user_email]');
@@ -17,40 +16,46 @@ const review = modal_form.querySelector('[name=review]');
 const close_form = document.querySelector('.close');
 
 if (sliders_block) {
-  const sliders_clear = function() {
+  const slidersClear = function() {
     for (let i = 0; i<sliders.length; i++) {
       sliders[i].classList.add('element-hidden');
     }
   }
-  const button_clear = function() {
+  const buttonClear = function() {
     for (let i = 0; i<slide_buttons.length; i++) {
       slide_buttons[i].classList.remove('slide-btn-active');
     }
   }
   first.addEventListener('click', function(evt) {
     evt.preventDefault();
-    sliders_clear();
-    button_clear();
+    slidersClear();
+    buttonClear();
     first_slide.classList.remove('element-hidden');
     first.classList.add('slide-btn-active');
   });
   second.addEventListener('click', function(evt) {
     evt.preventDefault();
-    sliders_clear();
-    button_clear();
+    slidersClear();
+    button_Clear();
     second_slide.classList.remove('element-hidden');
     second.classList.add('slide-btn-active');
   });
   third.addEventListener('click', function(evt) {
     evt.preventDefault();
-    sliders_clear();
-    button_clear();
+    slidersClear();
+    buttonClear();
     third_slide.classList.remove('element-hidden');
     third.classList.add('slide-btn-active');
   });
 }
 
 if (modal_form) {
+
+  const closeModal = function() {
+    modal_form.classList.remove('animation-appearance');
+    modal_form.classList.remove('animation-error');
+    modal_form.classList.add('element-hidden');
+  }
 
   let isStorageSupport = true;
   const storage = '';
@@ -66,8 +71,6 @@ if (modal_form) {
     modal_form.classList.remove('animation-disappeared');
     modal_form.classList.add('animation-appearance');
     modal_form.classList.remove('element-hidden');
-    overlay.classList.remove('element-hidden');
-
     if (storage) {
       login.value = storage;
       email.focus();
@@ -78,15 +81,12 @@ if (modal_form) {
 
   close_form.addEventListener('click', function(evt) {
     evt.preventDefault();
-    modal_form.classList.remove('animation-appearance');
-    modal_form.classList.remove('animation-error');
     modal_form.classList.add('animation-disappeared');
-    modal_form.classList.add('element-hidden');
-    overlay.classList.add('element-hidden');
+    setTimeout (closeModal, 1000);
   });
 
   form.addEventListener('submit', function(evt) {
-    if (!login.value || !email.value || !review.value) {
+    if (!login.value || !email.value) {
       evt.preventDefault();
       modal_form.classList.remove('animation-error');
       modal_form.offsetWidth = modal_form.offsetWidth;
@@ -101,18 +101,8 @@ if (modal_form) {
   window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      modal_form.classList.remove('animation-appearance');
-      modal_form.classList.remove('animation-error');
-      modal_form.classList.add('element-hidden');
-      overlay.classList.add('element-hidden');
+      modal_form.classList.add('animation-disappeared');
+      setTimeout (closeModal, 1000);
     }
-  })
-
-  overlay.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    modal_form.classList.remove('animation-appearance');
-    modal_form.classList.remove('animation-error');
-    modal_form.classList.add('element-hidden');
-    overlay.classList.add('element-hidden');
   });
 }
